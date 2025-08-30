@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>D-Tec Multi-Service</title>
+  <meta name="viewport" content="width=device-width,initial-scale =1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+  <div class="container header-inner">
+
+    <!-- Brand: Logo + Text -->
+    <div class="brand">
+      <a href="index.html" class="brand-link">
+        <img src="images/logo.png" alt="D-Tec Logo" class="logo">
+        <div class="brand-text">
+          <h1>D-Tec</h1>
+          <small>Plumbing • Electrical • Solar • Tech</small>
+        </div>
+      </a>
+    </div>
+
+      <button id="navToggle" class="nav-toggle" aria-expanded="false">≡</button>
+
+      <nav id="siteNav" class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="repairs.html">Projects</a>
+        <a href="products.html">We Buy</a>
+        <a href="about.html">About</a> 
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h2>Everything fixed. Everything installed.</h2>
+        <p>
+          D-Tec offers plumbing, electrical & solar installation, electronics repair,
+          software installs & upgrades, web + graphic design and we buy damaged devices.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn" href="#services">Browse services</a>
+          <a class="btn-alt" href="repairs.html">View repairs gallery</a>
+        </div>
+
+        <ul class="feature-list">
+          <li>Wide coverage</li>
+          <li>Trusted expertise</li>
+          <li>Pickup for devices you sell</li>
+        </ul>
+      </div>
+
+      <div class="hero-media">
+        <!-- Replace hero.jpg with your photo -->
+        <img src="hero.jpg" alt="D-Tec team / work photo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="container section">
+    <h2 class="section-title">Our services</h2>
+
+    <div class="grid services-grid">
+      <article class="card">
+        <img src="plumbing.jpg" alt="Plumbing" class="card-image" />
+        <h3>Plumbing</h3>
+        <p>Leaks, installations, drains, bathroom & kitchen plumbing.</p>
+      </article>
+
+      <article class="card">
+        <img src="electrical.jpg" alt="Electrical" class="card-image" />
+        <h3>Electrical Installation</h3>
+        <p>Wiring, sockets, lighting, distribution board upgrades & safety checks.</p>
+      </article>
+
+      <article class="card">
+        <img src="solar.jpg" alt="Solar" class="card-image" />
+        <h3>Solar Installation</h3>
+        <p>Solar PV systems, batteries, inverters, sizing & maintenance.</p>
+      </article>
+
+      <article class="card">
+        <img src="repair.jpg" alt="Electronics Repair" class="card-image" />
+        <h3>Electronic Repair</h3>
+        <p>Phones, laptops, TVs diagnostics, part replacement & data recovery.</p>
+      </article>
+
+      <article class="card">
+        <img src="software.jpg" alt="Software installation" class="card-image" />
+        <h3>Software & Upgrades</h3>
+        <p>sell computer accessories, OS installs, drivers, antivirus, SSD/RAM upgrades and tuning.</p>
+      </article>
+
+      <article class="card">
+        <img src="webdesign.jpg" alt="Web design & graphic design" class="card-image" />
+        <h3>Web & Graphic Design</h3>
+        <p>Websites, logos, banners, social graphics and brand kits.</p>
+      </article>
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> D-Tec. All rights reserved.</p>
+      <p class="muted">Trusted multi-discipline technicians in plumbing, power & tech.</p>
+    </div>
+  </footer>
+
+  <script>
+    // small script for nav toggle and year
+    document.getElementById('navToggle').addEventListener('click', function () {
+      var nav = document.getElementById('siteNav');
+      var open = nav.classList.toggle('open');
+      this.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
