@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Repairs — D-Tec</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+  <div class="container header-inner">
+
+    <!-- Brand: Logo + Text -->
+    <div class="brand">
+      <a href="index.html" class="brand-link">
+        <img src="images/logo.png" alt="D-Tec Logo" class="logo">
+        <div class="brand-text">
+          <h1>D-Tec</h1>
+          <small>Plumbing • Electrical • Solar • Tech</small>
+        </div>
+      </a>
+    </div>
+
+    <!-- Mobile menu toggle -->
+    <button id="navToggle" class="nav-toggle" aria-expanded="false">≡</button>
+
+    <!-- Navigation links -->
+    <nav id="siteNav" class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="repairs.html">Projects</a>
+      <a href="products.html">We Buy</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+
+  <main class="container section">
+    <h1 class="section-title">Our work & Repair</h1>
+    <p class="muted">Here are a few examples of the projects and services we’ve handled for our clients.</p>
+
+    <!-- Repair gallery — replace src with your photos -->
+    <div class="gallery-grid">
+      <figure class="gallery-item">
+        <img src="images/repairs/repair1.jpg" alt="Repair 1" />
+        <figcaption>plumbing projects</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="images/repairs/repair2.jpg" alt="Repair 2" />
+        <figcaption>Motherboard repair</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="images/repairs/repair3.jpg" alt="Repair 3" />
+        <figcaption>Laptop hinge and casing repair</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="images/repairs/repair4.jpg" alt="Repair 4" />
+        <figcaption>Graphics design</figcaption>
+      </figure>
+
+      
+    </div>
+
+    <section class="section">
+      <h2>Repair process</h2>
+      <ol>
+        <li>Describe the fault or bring the device in.</li>
+        <li>We run diagnostics and give a clear quote.</li>
+        <li>Approve the repair.we fix and test.</li>
+        <li>Pickup or delivery.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year2"></span> D-Tec</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>
