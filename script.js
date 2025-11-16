@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
   var toggle = document.getElementById('navToggle'); // the menu button
   var nav = document.getElementById('siteNav');      // the nav menu
@@ -11,9 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
       this.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
   }
-
-  
-  
   if (year) {
     year.textContent = new Date().getFullYear();
   }
@@ -32,8 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-
-  <script>
 document.getElementById("whatsappForm").addEventListener("submit", async function(e) {
   e.preventDefault();
   const phone = document.getElementById("userPhone").value;
@@ -47,8 +41,6 @@ document.getElementById("whatsappForm").addEventListener("submit", async functio
   const text = await res.text();
   document.getElementById("waResponse").innerText = text;
 });
-</script>
-
 
   function nextSlide() {
     current = (current + 1) % slides.length;
