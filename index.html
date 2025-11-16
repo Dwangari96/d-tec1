@@ -125,34 +125,6 @@
     </div>
 </section>
 
-<script>
-const whatsappForm = document.getElementById('whatsappForm');
-const waResponse = document.getElementById('waResponse');
-
-whatsappForm.addEventListener('submit', function(e) {
-    e.preventDefault(); // prevent page reload
-
-    const numberInput = document.getElementById('userPhone').value.trim();
-    if (!numberInput) {
-        waResponse.textContent = "❌ Please enter a valid phone number.";
-        waResponse.style.color = "red";
-        return;
-    }
-
-    // Clean number (remove spaces, non-digit characters)
-    const number = numberInput.replace(/\D/g, '');
-
-    // Construct WhatsApp click-to-chat link with pre-filled message
-    const waLink = `https://wa.me/${number}?text=${encodeURIComponent('🎉 You have successfully subscribed!')}`;
-
-    // Open WhatsApp in new tab/window
-    window.open(waLink, '_blank');
-
-    waResponse.textContent = "✅ Clicked! WhatsApp should open with your subscription message.";
-    waResponse.style.color = "green";
-});
-</script>
-
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© <span id="year"></span> D-Tec. All rights reserved.</p>
