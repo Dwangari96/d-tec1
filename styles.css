@@ -53,7 +53,14 @@ html,body {
 .site-nav a:hover::after {
   width: 100%;
 }
-.nav-toggle { display:none; background:transparent; color:white; border:0; font-size:20px; cursor:pointer; }
+.nav-toggle {
+  display:none;
+  background:transparent;
+  color:orange;
+  border:0;
+  font-size:48px;
+  cursor:pointer;
+}
 
 /* Hero */
 .hero {
