@@ -220,16 +220,6 @@ html,body {
   background: #ff6600; /* orange accent */
   }
 
-/* Hide menu on mobile */
-.site-nav {
-  display: none;
-  flex-direction: column;
-}
-
-/* Show when toggle is clicked */
-.site-nav.open {
-  display: flex;
-}
 
 /* Desktop: always visible */
 @media (min-width: 768px) {
